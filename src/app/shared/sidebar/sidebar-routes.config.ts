@@ -2,36 +2,49 @@ import { RouteInfo } from './sidebar.metadata';
 
 //Sidebar menu Routes and data
 export const ROUTES: RouteInfo[] = [
+  {
+    path: '/dashboard/dashboard1',
+    title: 'Dashboard',
+    icon: 'ft-home',
+    class: '',
+    badge: '',
+    badgeClass: '',
+    isExternalLink: false,
+    submenu: [],
+  },
+  {
+    path: '',
+    title: 'Disease',
+    icon: 'ft-home',
+    class: 'has-sub',
+    badge: '',
+    badgeClass: '',
+    isExternalLink: false,
+    submenu: [
+      {
+        path: '/product/list',
+        title: 'Liste ',
+        icon: 'ft-mail',
+        class: '',
+        badge: '',
+        badgeClass: '',
+        isExternalLink: false,
+        submenu: [],
+      },
+      {
+        path: '/product/add',
+        title: 'Ajotuer ',
+        icon: 'ft-message-square',
+        class: '',
+        badge: '',
+        badgeClass: '',
+        isExternalLink: false,
+        submenu: [],
+      },
+    ],
+  },
 
-     {
-        path: '/dashboard/dashboard1', title: 'Dashboard', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
-    },
-     {
-        path: '', title: 'Produits', icon: 'ft-home',class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false, submenu: [
-             { path: '/product/list', title: 'Liste ', icon: 'ft-mail', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-    { path: '/product/add', title: 'Ajotuer ', icon: 'ft-message-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-        ]
-    },
-   { path: '/commande/list-commande', title: 'Commandes', icon: 'ft-droplet', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [
-   
-    
-   ] },
-   
-  
-  
-    { path: '', title: 'Livreurs', icon: 'ft-mail', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false, submenu: [
-    { path: '/livreur/list', title: 'Liste ', icon: 'ft-file-text', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-    { path: '/livreur/add', title: 'Ajouter ', icon: 'ft-file-text', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-
-    ] },
-
-
-    { path: '', title: 'Dispatchers', icon: 'ft-message-square', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false, submenu: [
-    { path: '/dispatcher/list', title: 'Liste ', icon: 'ft-file-text', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-    { path: '/dispatcher/add', title: 'Ajouter ', icon: 'ft-file-text', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-    ] },
-    
-   /* 
+  /* 
     { path: '/chat-ngrx', title: 'Clients', icon: 'ft-message-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [
         { path: '/taskboard', title: 'Liste des clients', icon: 'ft-file-text', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
     { path: '/taskboard-ngrx', title: 'Ajouter un client', icon: 'ft-file-text', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },

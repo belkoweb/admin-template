@@ -1,3 +1,22 @@
-<p>
-  list-product works!
-</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Nom Scientifique</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let disease of diseases$|async">
+      <th scope="row">{{disease.id}}</th>
+      <td>{{disease.nom}}</td>
+      <td>{{disease.nomScientifique}}</td>
+      <td><button class="success btn" (click)="edit(disease)">
+          <i class="ft-edit-2 font-medium-2 "></i>
+        </button></td>
+    </tr>
+
+
+  </tbody>
+</table>

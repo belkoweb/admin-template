@@ -4,26 +4,21 @@ import { Routes, RouterModule } from '@angular/router';
 
 export const Full_ROUTES: Routes = [
   {
-   path: 'dashboard',
-    loadChildren: () => import('../../components/dashboard/dashboard.module').then(m => m.DashboardModule)
+    path: 'dashboard',
+    loadChildren: () =>
+      import('../../components/dashboard/dashboard.module').then(
+        (m) => m.DashboardModule
+      ),
   },
   {
-    path:'product',
-    loadChildren:()=> import('../../components/product/product.module').then(m=>m.ProductModuleModule)
+    path: 'product',
+    loadChildren: () =>
+      import('../../components/product/product.module').then(
+        (m) => m.ProductModuleModule
+      ),
   },
-  {
-    path:'commande',
-     loadChildren:()=> import('../../components/commande/commande.module').then(m=>m.CommandeModule)
-  },
-  {
-    path:'livreur',
-     loadChildren:()=> import('../../components/livreur/livreur.module').then(m=>m.LivreurModule),
-  },
-  {
-    path:'dispatcher',
-     loadChildren:()=> import('../../components/dispatcher/dispatcher.module').then(m=>m.DispatcherModule),
-  },
- /* {
+
+  /* {
     path: 'calendar',
     loadChildren: () => import('../../calendar/calendar.module').then(m => m.CalendarsModule)
   },
