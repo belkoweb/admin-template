@@ -30,8 +30,29 @@
 
                 <div class="row">
                   <div class="form-group col-12 mb-2">
-                    <label for="nomScientifique">Contenu</label>
-                    <ckeditor [editor]="Editor" (change)="onChange($event)" [data]="contenu"></ckeditor>
+                    <label for="nomScientifique">Symptoms</label>
+                    <ckeditor [editor]="Editor" [data]="symptoms" (change)="onChangeSymptoms($event)"></ckeditor>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="form-group col-12 mb-2">
+                    <label for="nomScientifique">Conditions</label>
+                    <ckeditor [editor]="Editor" [data]="conditions" (change)="onChangeConditions($event)"></ckeditor>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="form-group col-12 mb-2">
+                    <label for="nomScientifique">Management </label>
+                    <ckeditor [editor]="Editor" [data]="management" (change)="onChangeManagement($event)"></ckeditor>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="form-group col-12 mb-2">
+                    <label for="nomScientifique">control </label>
+                    <ckeditor [editor]="Editor" [data]="control" (change)="onChangeControl($event)"></ckeditor>
                   </div>
 
                 </div>

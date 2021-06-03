@@ -8,8 +8,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let disease of diseases$|async">
-      <th scope="row">{{disease.id}}</th>
+    <tr *ngFor="let disease of diseases$|async,let i = index">
+      <th scope="row">{{i}}</th>
       <td>{{disease.nom}}</td>
       <td>{{disease.nomScientifique}}</td>
       <td><button class="success btn" (click)="edit(disease)">

@@ -4,7 +4,11 @@ export interface Disease {
   id?: number;
   nom?: string;
   nomScientifique?: string;
-  contenu?: string;
+  cycleImage?: string;
+  management?: string;
+  conditions?: string;
+  symptoms?: string;
+  control?: string;
   langue?: string;
   images?: Image[];
 }
