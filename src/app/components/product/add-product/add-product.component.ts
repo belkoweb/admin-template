@@ -151,6 +151,7 @@ export class AddProductComponent implements OnInit {
       cycleImage: this.downloadURL,
       management: this.management,
       nomScientifique: this.nomScientifique.value,
+      langue: 'fr',
       images: this.images,
     });
   }
